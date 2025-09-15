@@ -1,0 +1,261 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e cores principais */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e3f2fd 0%, #fffde7 100%);
+    color: #222;
+    min-height: 100vh;
+    line-height: 1.7;
+}
+
+/* Container centralizado */
+.container {
+    max-width: 900px;
+    margin: 48px auto 32px auto;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+    padding: 48px 36px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.4rem;
+    color: #1976d2;
+    margin-bottom: 22px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px #e3f2fd;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #388e3c;
+    margin: 32px 0 14px 0;
+    font-weight: 600;
+    border-left: 5px solid #e3f2fd;
+    padding-left: 12px;
+}
+
+h3 {
+    font-size: 1.15rem;
+    color: #f57c00;
+    margin: 22px 0 12px 0;
+    font-weight: 500;
+}
+
+/* Navegação */
+nav {
+    margin-bottom: 36px;
+    background: #e3f2fd;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+    padding: 12px 0;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    list-style: none;
+    padding: 0 18px;
+    justify-content: center;
+}
+
+nav li {
+    background: #fff;
+    border-radius: 8px;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px rgba(25, 118, 210, 0.06);
+}
+
+nav li:hover {
+    background: #bbdefb;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.2s, background 0.2s;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    color: #0d47a1;
+    background: #e3f2fd;
+}
+
+/* Seções principais */
+div[id] {
+    margin-bottom: 36px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eee;
+    background: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(44,62,80,0.04);
+    transition: box-shadow 0.2s;
+}
+
+div[id]:hover {
+    box-shadow: 0 4px 16px rgba(44,62,80,0.09);
+}
+
+/* Listas e links */
+ul {
+    margin-left: 28px;
+    margin-bottom: 14px;
+    list-style: disc inside;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+a {
+    color: #1976d2;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+/* Destaques */
+strong {
+    color: #388e3c;
+    font-weight: 700;
+}
+
+/* Fontes */
+.fontes a {
+    font-weight: 500;
+    color: #f57c00;
+    background: #fff3e0;
+    border-radius: 4px;
+    padding: 2px 6px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.fontes a:hover {
+    color: #d84315;
+    background: #ffe0b2;
+}
+
+/* Scroll suave para âncoras */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Pequena animação nos títulos */
+h1, h2, h3 {
+    transition: color 0.3s;
+}
+
+/* Insights - container */
+.insights {
+    max-width: 900px;
+    margin: 36px auto;
+    padding: 36px 28px;
+    background: linear-gradient(120deg, #e8f5e9 80%, #fffde7 100%);
+    border-radius: 18px;
+    border: 1px solid #c8e6c9;
+    box-shadow: 0 4px 18px rgba(56, 142, 60, 0.09);
+}
+
+/* Título principal dos insights */
+.insights h1 {
+    font-size: 1.8rem;
+    color: #388e3c;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 0 2px 6px #e8f5e9;
+}
+
+/* Cada bloco de insight individual */
+.insight-bloco {
+    margin-bottom: 18px;
+    padding: 16px 14px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(56,142,60,0.04);
+    border-left: 5px solid #c8e6c9;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.insight-bloco:hover {
+    box-shadow: 0 4px 16px rgba(56,142,60,0.09);
+    border-color: #388e3c;
+}
+
+.insight-bloco h2 {
+    font-size: 1.18rem;
+    color: #1976d2;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-left: 4px solid #bbdefb;
+    padding-left: 10px;
+}
+
+.insight-bloco p,
+.insight-bloco ul {
+    font-size: 1.07em;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.insight-bloco ul {
+    margin-left: 22px;
+    list-style: disc inside;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    .container, .insights {
+        padding: 16px 12px;
+        max-width: 99vw;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 4px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    .insights h1 {
+        font-size: 1.4rem;
+    }
+    .insight-bloco h2 {
+        font-size: 1rem;
+    }
+}
+
+/* Pequena sombra no body */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    background: radial-gradient(circle at 60% 20%, #bbdefb 0%, transparent 70%);
+    opacity: 0.25;
+    pointer-events: none;
+}
